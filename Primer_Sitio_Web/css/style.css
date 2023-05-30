@@ -1,0 +1,55 @@
+:root{
+    --colorWhite: #ffffff;
+    --colorBlack: #000000;
+    --colorPrimary: #FFC107;
+    --colorSecondary: #0097A7;
+    --colorGrey: #757575;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px;
+    font-family: 'Krub', sans-serif;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 3.8rem;
+}
+
+.titulo span{
+    font-size: 2.5rem;
+}
+/*Añadido por mi, no es parte del curso*/
+h2, h3, .titulo{
+    font-weight: 500;
+}
+/*Hasta aca*/
+
+.contenedor {
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.nav-background {
+    background-color: var(--colorSecondary);
+}
+
+.nav-principal{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-principal a{
+    color: var(--colorWhite);
+    text-decoration: none;
+    padding: 1.1rem;
+}
+
+.nav-principal a:hover{
+    background-color: var(--colorPrimary);
+    color: var(--colorBlack);
+}
+
