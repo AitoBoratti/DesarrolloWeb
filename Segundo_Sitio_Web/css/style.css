@@ -299,3 +299,7 @@ h3 { font-size: 2.4rem;}
     cursor: pointer;
     background-color: var(--secundarioOscuro);
 }
+
+.Formulario option{
+    background-color: var(--primarioOscuro);
+}
