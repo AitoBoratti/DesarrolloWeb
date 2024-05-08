@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina web de blogs de café">
+    <title>Blog de Café</title>
+    <!--Css and Normalize load-->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="img/blog1.webp" as="image">
+
+    <!--PreFetch-->
+    <link rel="prefetch" href="nosotros.html" as="html">
+
+
+</head>
+<body>
+
+    <header class="header">
+        <!--Barra de navegación con logo-->
+        <div class="contenedor">    
+            <div class="barra">
+                <a class="logo  centrar-texto" href="index.html"> 
+                    <h1 class="logo__nombre no-margin">Blog <span class="logo__bold">de Café</span></h1>
+                </a>
+            
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contactos</a>
+                </nav>
+            </div>
+        </div>
+        
+        <!--Texto del medio-->
+        <div class="header__texto centrar-texto">
+            <h2 class="no-margin">Blog de Café con cursos y consejos</h2>
+            <p class="no-margin">Aprende de los expertos con las mejores recetas y consejos</p>
+        </div>
+        
+    </header>
+
+    <div class="contenedor contenido-principal">
+        
+        <main class="blog">
+            <h3>Nuestro Blog</h3>
+
+            <article class="entrada">
+                <div class="entrada__img">
+                   <a href="entrada.html"><picture>
+                        <source loading="lazy" srcset="img/blog1.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog1.jpg" alt="imagen blog">
+                    </picture></a> 
+                </div>
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">Tipos de grano de café</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac turpis id metus vestibulum pharetra. 
+                        Sed ultrices ac tellus et porta. Sed aliquam euismod venenatis. In hac habitasse platea dictumst.
+                        Praesent ligula diam, lobortis a euismod in, ullamcorper eleifend quam. Proin congue lectus sem, q
+                        uis sollicitudin lectus mollis eu.</p>
+                    <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
+                </div>
+            </article>
+
+            <article class="entrada">
+                <div class="entrada__img">
+                    <a href="entrada.html"><picture>
+                        <source loading="lazy" srcset="img/blog2.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog2.jpg" alt="imagen blog">
+                    </picture></a>
+                </div>
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">3 Deliciosas recetas de Café</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac turpis id metus vestibulum pharetra. 
+                        Sed ultrices ac tellus et porta. Sed aliquam euismod venenatis. In hac habitasse platea dictumst.
+                        Praesent ligula diam, lobortis a euismod in, ullamcorper eleifend quam. Proin congue lectus sem, q
+                        uis sollicitudin lectus mollis eu.</p>
+                    <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
+                </div>
+            </article>
+
+            <article class="entrada">
+                <div class="entrada__img">
+                    <a href="entrada.html"><picture>
+                        <source loading="lazy" srcset="img/blog3.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog3.jpg" alt="imagen blog">
+                    </picture></a>
+                    
+                </div>
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">Beneficios del café</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac turpis id metus vestibulum pharetra. 
+                        Sed ultrices ac tellus et porta. Sed aliquam euismod venenatis. In hac habitasse platea dictumst.
+                        Praesent ligula diam, lobortis a euismod in, ullamcorper eleifend quam. Proin congue lectus sem, q
+                        uis sollicitudin lectus mollis eu.</p>
+                    <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
+                </div>
+            </article>
+
+        </main>
+        <aside class="sidebar">
+            <h3>Nuestros Cursos y Talleres</h3>
+
+            <ul class="cursos no-padding">
+                <li class="widget-curso">
+                    <h4 class="no-margin">Técnicas de Extracción de Café</h4>
+                    <p class="widget-curso__label">Precio:
+                        <span class="widget-curso__info">Gratis</span>
+                    </p>
+                    <p class="widget-curso__label">Cupo:
+                        <span class="widget-curso__info">20</span>
+                    </p>
+                    <a href="entrada.html" class="boton boton--secundario">Sobre nuestros cursos</a>
+                </li>
+                <li class="widget-curso">
+                    <h4 class="no-margin">4 recetas de Café para Principiantes</h4>
+                    <p class="widget-curso__label">Precio:
+                        <span class="widget-curso__info">Gratis</span>
+                    </p>
+                    <p class="widget-curso__label">Cupo:
+                        <span class="widget-curso__info">20</span>
+                    </p>
+                    <a href="entrada.html" class="boton boton--secundario">Sobre nuestros cursos</a>
+                </li>
+            </ul>
+        </aside>
+    </div>
+    
+    <footer>
+        <div class="contenedor">
+            <div class="barra barra-footer">
+                <a href="index.html" class="logo centrar-texto ">
+                    <h1 class="logo__nombre">Blog <span class="logo__bold">de Café</span></h1>
+                </a>
+                
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="nosotros.html" class="navegacion__enlace">Cursos</a>
+                    <a href="nosotros.html" class="navegacion__enlace">Contactos</a>
+                </nav>
+            </div>
+            <nav></nav>
+        </div>
+    </footer>
+    <script src="js/modernizr.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.festival{
+    @include m.tablet{
+        @include m.grid(2);
+    }
+
+    .festival__imagen{
+        margin-bottom: 3rem;
+        @include m.tablet{
+            margin-bottom: 0;
+        }
+    }
+
+}
+
+.festival__contenido{
+    h2{
+        margin: 0;
+    }
+
+    p:first-of-type{
+        color: v.$verde;
+        font-weight: 700;
+        margin: 3rem 0rem;
+    }
+
+    .festival__contenido--fecha{
+        color: v.$verde;
+        font-weight: 700;
+        margin: 3rem 0rem;
+    }
+}

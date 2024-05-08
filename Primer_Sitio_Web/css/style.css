@@ -103,6 +103,7 @@ h2, h3, .titulo{
 .nav-principal a:hover{
     background-color: var(--colorPrimary);
     color: var(--colorBlack);
+    font-weight: bold;
 }
 
 .hero {

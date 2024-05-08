@@ -1,0 +1,96 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.contenedor-boletos{
+    background-color: v.$verde;
+    h3{
+        color: v.$blanco;
+    }
+
+    .boletos{
+        @include m.contenedor;
+        @include m.tablet{
+            @include m.grid(2);
+
+        }
+    }
+    
+}
+
+.pase{
+    
+    transition: transform .3s ease-in-out;
+    &:hover{
+        transform: scale(1.05);
+    }
+
+    &:last-of-type{
+        margin-top: 3rem;
+    }
+    @include m.tablet{
+        &:last-of-type{
+            margin-top: 0;
+        }
+    }
+    
+    @include m.contenedor;
+    &-nombre{
+        color: v.$negro;
+        font-size: 3rem;
+        font-weight: 900;
+        text-align: center;
+        color: v.$blanco;
+    }
+
+    p{
+        text-align: center;
+        color: v.$blanco;
+        margin: 0;
+    }
+    
+    &-header,&-footer{
+        padding: 0.5rem;
+    }
+    
+    &-header{
+        background-color: v.$rosa;
+        p{
+            text-transform: uppercase;
+            font-size: 2.4rem;
+            padding: 1rem 0;
+        }
+    }
+
+    &-footer{
+        background-color: v.$blanco;
+        p{
+            transition: background-color 0.2s linear;
+            font-weight: 900;
+            font-size: 2.8rem;
+            background-color: v.$morado;
+            border-radius: 0.5rem;
+            padding: 0.5rem 0;
+
+            &:hover{
+                background-color: darken($color: v.$morado, $amount: 20%);
+                cursor: pointer;
+            }
+            
+        }
+    
+    }
+
+    &-body{
+        background-color: v.$blanco;
+        padding: 1rem 0;
+        // height: 28rem;
+        // object-fit: cover;
+        ul{
+            @include m.resetear-lista;
+        }
+        li{
+            padding: 2rem;
+            border-bottom: 1px solid #e1e1e1;
+        }
+    }
+}

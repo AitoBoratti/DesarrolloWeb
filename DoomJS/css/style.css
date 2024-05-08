@@ -1,0 +1,287 @@
+:root{
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --FuenteParrafos: 'Open Sans', sans-serif;
+
+    --colorPrimario: #784D3C;
+    --blanco: #FFFFFF;
+    --grisClaro: #e1e1e1;
+    --negro: #000000;
+}
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+body{
+    font-family: var(--FuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/** Globales **/
+.contenedor {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4 {
+    font-family: var(--fuenteHeading);
+    line-height: 1.2;
+
+}
+h1{
+    font-size: 4.8rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 3.2rem;
+}
+h4{
+    font-size: 2.8rem;
+}
+
+img{
+    max-width: 100%;
+}
+
+/** Utilidades **/
+.no-margin{
+    margin: 0;
+}
+.no-padding{
+    padding: 0;
+}
+.centrar-texto{
+    text-align: center;
+}
+
+/**Header**/
+.webp .header{
+    background-image: url(../img/banner.webp);
+}
+.no-webp .header{
+    background-image: url(../img/banner.jpg);
+}
+.header {
+    height: 60rem;
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.header__texto{
+    color: var(--blanco);
+    margin-top: 5rem;
+}
+
+/**Header__Barra**/
+.logo{
+    color: var(--blanco);
+}
+.logo__nombre{
+    font-weight: 400;
+}
+.logo__bold{
+    font-weight: 700;
+}
+
+.navegacion{
+    margin-top: 1rem;
+}
+.navegacion__enlace{
+    color: var(--blanco);
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+}
+.navegacion__enlace:hover{
+    font-weight: 700;
+}
+.barra{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+@media (min-width: 768px){
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 3rem;
+        padding-bottom: none;
+    }
+    .navegacion{
+        display: flex;
+        gap: 2rem;
+    }
+    .header__texto{
+        margin-top: 13rem;
+    }
+}
+
+/** Contenido principal, main**/
+@media (min-width:768px ){
+    .contenido-principal{
+        display: grid;
+        grid-template-areas: "principal lateral";
+        grid-template-columns: 2fr 1fr;
+        gap: 4rem;
+    }
+}
+
+.entrada{
+    border-bottom: 1px solid var(--grisClaro);
+    margin-top: 2rem;
+}
+.entrada:last-of-type{
+    border: none;
+    margin-bottom: none;
+}
+.boton{
+    display: block;
+    background-color: var(--negro);
+    color: var(--blanco);
+    font-family: var(--fuenteHeading);
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 1rem 3rem;
+    margin-bottom: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+@media (min-width: 768px){
+    .boton {
+        display: inline-block;
+        margin-top: unset;
+    }
+}
+
+.boton--secundario {
+    background-color: var(--colorPrimario);
+}
+.cursos{
+    list-style: none;
+}
+.widget-curso{
+    border-bottom: 1px solid var(--grisClaro);
+    margin-bottom: 2rem;
+}
+.widget-curso:last-of-type{
+    border: none;
+}
+.widget-curso__label, .taller__label{
+    font-family: var(--fuenteHeading);
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.widget-curso__info, .taller__info{
+    font-weight: 400;
+}
+
+footer{
+    background-color: var(--negro);
+    margin-top: 4rem;
+}
+
+.logo-footer{
+    text-align: center;
+}
+
+.barra-footer{
+    padding-top: 0.1rem;
+    padding-bottom: 1rem;
+}
+
+@media (min-width: 768px){
+    .logo-footer{
+        text-align: none;
+    }
+    .barra-footer{
+        padding: unset;
+    }
+}
+
+/**Nosotros CSS**/
+@media (min-width: 1024px){
+    .sobre-nosotros{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+    .sobre-nosotros__texto p{
+        margin-top: -1rem;
+    }
+}
+
+/**Cursos CSS**/
+.taller{
+    border-bottom: 1px solid var(--grisClaro);
+    padding: 3rem 0;
+}
+.taller:last-of-type{
+    border: none;
+    margin: none;
+}
+@media (min-width: 768px){
+    .taller{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 2rem;
+    }
+}
+
+/**Entrada Blog CSS**/
+
+/**Contacto CSS**/
+.contacto-bg{
+    background-image: url(../img/contacto.jpg);
+    background-size: cover;
+    height: 400px;
+}
+.formulario{
+    background-color: var(--blanco);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+}
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+.campo__label{
+    flex: 0 0 9rem;
+    text-align: right;
+}
+.campo__input{
+    flex: 1;
+    border: 1px solid var(--grisClaro);
+}
+.campo__input--txtarea{
+    height: 20rem;
+}
+.error_text{
+    color: red;
+    font-style: oblique;
+    font-weight: 700;
+}
+.exito_text{
+    background-color: lightgreen;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    padding: 0.3rem;
+}

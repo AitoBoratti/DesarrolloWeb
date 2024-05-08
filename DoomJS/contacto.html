@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Css and Normalize load-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Blog de Café</title>
+</head>
+<body>
+    <header class="header">
+        <!--Barra de navegación con logo-->
+        <div class="contenedor">    
+            <div class="barra">
+                <a class="logo  centrar-texto" href="index.html"> 
+                    <h1 class="logo__nombre no-margin">Blog <span class="logo__bold">de Café</span></h1>
+                </a>
+            
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contactos</a>
+                </nav>
+            </div>
+        </div>
+        
+        <!--Texto del medio-->
+        <div class="header__texto centrar-texto">
+            <h2 class="no-margin">Blog de Café con cursos y consejos</h2>
+            <p class="no-margin">Aprende de los expertos con las mejores recetas y consejos</p>
+        </div>
+        
+    </header>
+
+    <main class="contenedor">
+        <h3 class="centrar-texto">Contacto</h3>
+        <div class="contacto-bg"></div>
+        <form class="formulario">
+            <div class="campo">
+                <label class="campo__label" for="nombre">Nombre</label>
+                <input class="campo__input" type="text" placeholder="Tu nombre" id="nombre">
+            </div>
+            <div class="campo">
+                <label class="campo__label" for="email">Email</label>
+                <input class="campo__input" type="text" placeholder="Tu E-mail" id="email">
+            </div>
+            <div class="campo">
+                <label class="campo__label" for="Mensaje">Mensaje</label>
+                <textarea class="campo__input campo__input--txtarea" id="mensaje"></textarea>
+            </div>
+            <div class="campo">
+                <input type="submit" value="Enviar" class="boton boton--primario">
+            </div>
+        </form>
+    </main>
+    
+    <footer>
+        <div class="contenedor">
+            <div class="barra barra-footer">
+                <a href="index.html" class="logo centrar-texto ">
+                    <h1 class="logo__nombre">Blog <span class="logo__bold">de Café</span></h1>
+                </a>
+                
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="nosotros.html" class="navegacion__enlace">Cursos</a>
+                    <a href="nosotros.html" class="navegacion__enlace">Contactos</a>
+                </nav>
+            </div>
+            <nav></nav>
+        </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
