@@ -9,21 +9,6 @@ Aquí encontrarás ejemplos de aplicaciones web simples, desde APIs hasta sitios
 - Ejemplos de cómo crear aplicaciones web, manejar rutas, formularios y bases de datos.
 - Aplicaciones prácticas de desarrollo web para iniciarse en el backend.
 
-## ¿Cómo empezar?
-
-1. Clona este repositorio en tu máquina local:
-
-    ```bash
-    git clone https://github.com/AitoBoratti/DesarrolloWeb.git
-    ```
-
-2. Si el proyecto tiene dependencias, instala las librerías necesarias:
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3. Ejecuta los proyectos desde tu entorno local.
 
 ## Contribuciones
 
